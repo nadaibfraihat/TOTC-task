@@ -1,0 +1,857 @@
+/* globsl style  */
+:root {
+    --primaryColor: #5B5B5B;
+    --secondaryColor: #49BBBD;
+    --heading3Color: #252641;
+    --bgColor: #f8fbff;
+}
+
+@font-face {
+    font-family: customBoldFont;
+    src: url(../fonts/poppins.bold.ttf);
+}
+
+@font-face {
+    font-family: customThinFont;
+    src: url(../fonts/Poppins-Thin.ttf);
+}
+
+h2 {
+    font-family: customBoldFont;
+    font-size: 30px;
+    padding: 50px 65px 50px;
+
+}
+
+h3 {
+    font-family: customBoldFont;
+    text-transform: capitalize;
+    color: var(--h3Color);
+}
+
+/* start of nav */
+nav {
+    padding: 30px 0px 28px;
+    text-transform: capitalize;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+nav a {
+    color: var(--primaryColor);
+    font-size: 16px;
+    font-family: customThinFont;
+    font-weight: 900;
+}
+
+
+nav .user-info .row {
+    gap: 10px;
+    font-family: customThinFont;
+    font-weight: 900;
+}
+
+/* start of responsive navbar */
+@media screen and (min-width:320px) and (max-width:660px) {
+    nav {
+        padding: 10px 0px;
+    }
+
+    nav .row {
+        display: inline-block;
+        width: 100%;
+        margin: auto;
+    }
+
+    nav .container {
+        width: 95%;
+    }
+
+    nav .logo img {
+        width: 100%;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav .user-info {
+        display: none;
+    }
+}
+
+@media screen and (min-width:661px) and (max-width:900px) {
+    nav {
+        padding: 20px 0px;
+        text-transform: capitalize;
+    }
+
+    nav .container {
+        width: 95%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    nav a {
+        font-size: 16px;
+        font-family: customBoldFont;
+    }
+
+    nav .user-info .row img {
+        width: 60%;
+    }
+}
+
+
+@media screen and (min-width:901px) and (max-width:1280px) {}
+
+
+/* end of navbar */
+/* start of lessons  */
+.lessons .container {
+    background-color: rgb(208, 236, 235);
+    border-radius: 16px;
+}
+
+.lessons-content>.row {
+    gap: 50px;
+    padding: 0px 65px;
+}
+
+.lessons-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lessons-content {
+    padding-bottom: 155px;
+}
+
+.lessons a {
+    font-size: 13px;
+    font-weight: 900;
+    color: var(--secondaryColor);
+    font-family: customBoldFont;
+    padding-right: 70px;
+}
+
+.lessons h3 {
+    display: block;
+    padding-top: 12px;
+}
+
+.lesson img[alt="AWS Certified Solutions Architect"] {
+    width: 100%;
+}
+
+.lesson {
+    background-color: white;
+    border-radius: 20px;
+    padding: 19.6px 25px;
+    width: calc((100% - 100px)/ 3);
+}
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+}
+
+.user-info span {
+    font-size: 14px;
+    letter-spacing: 2%;
+    font-weight: 900;
+    margin-left: 8px;
+    text-transform: capitalize;
+    font-family: customBoldFont;
+}
+
+.lesson .progress {
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #d1d1d1;
+}
+
+.lesson .progress-bar {
+    background-color: var(--secondaryColor);
+    width: 70%;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.lesson .progress-text {
+    color: black;
+    opacity: 50%;
+    font-size: 14px;
+    text-align: right;
+    margin-top: 12px;
+    font-family: customBoldFont;
+
+}
+
+.user-info .row {
+    justify-content: left;
+    margin: 10px 0px;
+}
+
+/* start of responsive lessons */
+@media screen and (min-width:320px) and (max-width:660px) {
+    .lessons .container {
+        background-color: rgb(208, 236, 235);
+        border-radius: 16px;
+        margin-top: 20px;
+    }
+
+    .lessons-header {
+        display: inline-block;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .lessons h2 {
+        padding: 20px 10px;
+    }
+
+    .lessons a {
+        text-align: center;
+        padding-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .lessons-content {
+        padding-bottom: 80px;
+        padding-top: 20px;
+    }
+
+    .lessons-content>.row {
+        padding: 0px 20px;
+        row-gap: 10px;
+    }
+
+    .lesson {
+        background-color: white;
+        border-radius: 20px;
+        padding: 19.6px 25px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:661px) and (max-width:900px) {
+    .lessons .container {
+        margin-top: 20px;
+    }
+
+    .lessons-header {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .lessons h2 {
+        padding: 20px;
+    }
+
+    .lessons a {
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .lessons-content {
+        padding-bottom: 80px;
+        padding-top: 20px;
+    }
+
+    .lessons-content>.row {
+        padding: 0px 20px;
+        gap: 50px;
+    }
+
+    .lesson {
+        background-color: white;
+        border-radius: 20px;
+        padding: 19.6px 25px;
+        width: calc((100% - 50px) / 2);
+    }
+}
+
+
+@media screen and (min-width:901px) and (max-width:1280px) {
+    .lessons-header {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .lessons h2 {
+        padding: 20px;
+        font-size: 40px;
+    }
+
+    .lessons a {
+        padding-right: 0px;
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .lessons-content {
+        padding-bottom: 80px;
+        padding-top: 20px;
+    }
+
+    .lessons-content>.row {
+        padding: 0px 20px;
+        gap: 50px;
+    }
+
+    .lesson {
+        background-color: white;
+        border-radius: 20px;
+        padding: 19.6px 25px;
+        width: calc((100% - 50px) / 2);
+    }
+}
+
+/* start of categories section */
+.categories h2 {
+    margin: 82px 0px 53px;
+    font-size: 30px;
+    text-align: left;
+}
+
+.category h3 {
+    margin: 25px 0px;
+}
+
+.categories .row {
+    row-gap: 80px;
+}
+
+.category p {
+    font-family: customThinFont;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.categories .category {
+    width: calc((100% - 88px)/4);
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(175, 173, 173, 0.8);
+    padding: 22px;
+}
+
+/* start of responsive categories */
+@media screen and (min-width:320px) and (max-width:660px) {
+
+    .categories h2 {
+        padding: 20px 0px 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .categories .row {
+        row-gap: 30px;
+    }
+
+    .categories .category {
+        width: 100%;
+        text-align: center;
+        box-shadow: 5px 5px 10px rgba(175, 173, 173, 0.8);
+        padding: 22px;
+    }
+
+}
+
+@media screen and (min-width:661px) and (max-width:900px) {
+
+    .categories h2 {
+        padding: 20px;
+    }
+
+    .categories .row {
+        row-gap: 30px;
+    }
+
+    .categories .category {
+        width: calc((100% - 60px)/ 2);
+        text-align: center;
+        box-shadow: 5px 5px 10px rgba(175, 173, 173, 0.8);
+        padding: 22px;
+    }
+}
+
+
+@media screen and (min-width:901px) and (max-width:1280px) {
+    .categories h2 {
+        margin: 82px 0px 53px;
+        font-size: 40px;
+    }
+
+    .category h3 {
+        margin: 25px 0px;
+        font-size: 30px;
+    }
+
+    .category p {
+        font-size: 18px;
+    }
+
+    .categories .row {
+        row-gap: 50px;
+    }
+
+    .categories .category {
+        width: calc((100% - 100px)/ 2);
+        box-shadow: 5px 5px 10px rgba(175, 173, 173, 0.8);
+        padding: 40px 10px;
+
+    }
+}
+
+
+/* start of recommedation section */
+
+.recommendation-section {
+    margin: 95px 0px;
+}
+
+.recommendation-section .container {
+    background-color: rgb(208, 236, 235);
+    border-radius: 16px;
+}
+
+.recommendation-section .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.recommendation-section a {
+    font-size: 13px;
+    font-weight: 900;
+    color: var(--secondaryColor);
+    font-family: customBoldFont;
+    padding-right: 70px;
+}
+
+.recommendation-cards {
+    gap: 30px;
+    padding: 0px 60px 60px;
+}
+
+.recommendation-card {
+    background-color: white;
+    width: calc((100% - 90px) / 4);
+    padding: 10px 10px;
+}
+
+.recommendation-card img[alt="aws certified"] {
+    width: 100%;
+    height: 150px;
+}
+
+.recommendation-cards .card-content {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.recommendation-cards .card-item {
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    align-items: center;
+    padding: 15px 0px;
+    gap: 3px;
+}
+
+.recommendation-card .card-item span {
+    font-size: 12px;
+    text-transform: capitalize;
+    font-family: customThinFont;
+    font-weight: bold;
+}
+
+.recommendation-card .card-item img {
+    width: 30%;
+}
+
+.recommendation-section h3 {
+    margin: 20px 0px;
+}
+
+.recommendation-section .card-description {
+    line-height: 22px;
+    color: var(--primaryColor);
+    font-family: customThinFont;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.recommendation-cards .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-footer .author {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.author img {
+    width: 40%;
+}
+
+.author .author-name {
+    width: 40%;
+}
+
+.current-price {
+    color: var(--secondaryColor);
+    font-family: customBoldFont;
+    font-size: 18px;
+}
+
+.old-price {
+    font-size: 14px;
+    font-style: italic;
+    text-decoration: line-through;
+    opacity: 50%;
+}
+
+/* start of responsive recommendation */
+@media screen and (min-width:320px) and (max-width:660px) {
+    .recommendation-section {
+        margin: 95px 0px;
+    }
+
+    .recommendation-section .container {
+        background-color: rgb(208, 236, 235);
+        border-radius: 16px;
+    }
+
+    .recommendation-section .header {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .recommendation-section h2 {
+        padding: 20px 40px;
+    }
+
+    .recommendation-section a {
+        text-align: center;
+        padding-right: 0px;
+        margin-bottom: 0px;
+    }
+
+    .recommendation-cards {
+        margin-top: 20px;
+        gap: 20px;
+        padding: 0px 30px 30px;
+    }
+
+    .recommendation-card {
+        background-color: white;
+        width: 100%;
+        padding: 0px 20px;
+        margin: 20px 0px;
+    }
+
+    .recommendation-card img[alt="aws certified"] {
+        width: 100%;
+        height: 200px;
+    }
+
+    .recommendation-section .card-description {
+        line-height: 30px;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width:661px) and (max-width:900px) {
+    .recommendation-section .container {
+        background-color: rgb(208, 236, 235);
+        border-radius: 16px;
+
+    }
+
+    .recommendation-section .header {
+        display: inline-block;
+        font-size: 20px;
+
+    }
+
+    .recommendation-section .header h2 {
+        padding: 20px;
+    }
+
+    .recommendation-section a {
+        margin-bottom: 10px;
+        padding: 20px;
+    }
+
+    .recommendation-cards {
+        margin-top: 0px;
+        padding: 0px 10px 20px;
+
+    }
+
+    .recommendation-cards .row {
+        padding: 0px 10px;
+    }
+
+    .recommendation-card {
+        background-color: white;
+        width: calc((100% - 60px)/ 2);
+        padding: 10px;
+        margin: 10px 0px;
+    }
+
+    .recommendation-cards {
+        margin-top: 40px;
+        gap: 30px;
+    }
+
+    .recommendation-section .card-description {
+        line-height: 30px;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+}
+
+
+@media screen and (min-width:901px) and (max-width:1280px) {
+    .recommendation-section .container {
+        background-color: rgb(208, 236, 235);
+        border-radius: 16px;
+    }
+
+    .recommendation-section .header {
+        display: inline-block;
+    }
+
+    .recommendation-section .header h2 {
+        margin-bottom: 20px;
+        padding: 20px;
+        font-size: 40px;
+    }
+
+    .recommendation-section h3 {
+        font-size: 30px;
+    }
+
+    .recommendation-card img[alt="aws certified"] {
+        width: 100%;
+        height: 350px;
+    }
+
+    .recommendation-section a {
+        padding-right: 0px;
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .recommendation-cards {
+        margin-top: 40px;
+    }
+
+    .recommendation-card {
+        background-color: white;
+        width: calc((100% - 60px)/ 2);
+        padding: 10px 10px;
+        margin: 20px 0px;
+    }
+
+    .recommendation-cards {
+        margin-top: 10px;
+        gap: 30px;
+        padding: 0px 15px;
+    }
+
+    .recommendation-section .card-description {
+        line-height: 30px;
+        font-weight: 600;
+        margin-bottom: 40px;
+        font-size: 25px;
+    }
+
+    .author .author-name {
+        font-size: 23px;
+    }
+
+    .current-price {
+        font-size: 22px;
+    }
+
+    .old-price {
+        font-size: 18px;
+    }
+
+    .recommendation-cards .card-item {
+        gap: 10px;
+        width: 30%;
+    }
+
+    .recommendation-card .card-item span {
+        font-size: 18px;
+    }
+}
+
+/* start of footer */
+footer {
+    background-color: #252641;
+    text-align: center;
+    padding: 75px 0px 60px;
+}
+
+.TOTC-sign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+footer img {
+    width: 90%;
+}
+
+footer .TOTC-sign span {
+    width: 1px;
+    height: 50px;
+    background-color: var(--primaryColor);
+    margin: 0px 20px;
+}
+
+footer .TOTC-sign p {
+    font-family: customBoldFont;
+    font-weight: 900;
+    color: white;
+    letter-spacing: 2px;
+    width: 11%;
+    font-size: 20px;
+    text-align: left;
+}
+
+.subscribe-section {
+    margin: 40px 0px;
+}
+
+.subscribe-section p {
+    font-size: 24px;
+    letter-spacing: 4%;
+    font-family: customBoldFont;
+    color: white;
+    opacity: 70%;
+    margin-bottom: 20px;
+}
+
+.subscribe-section form input {
+    height: 60px;
+    width: 424px;
+    border-radius: 50px;
+    border-color: var(--primaryColor);
+    border-width: 1px;
+    border-style: solid;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding-left: 20px;
+}
+
+.subscribe-section button {
+    background-color: var(--secondaryColor);
+    width: 190px;
+    height: 60px;
+    border-radius: 50px;
+    color: white;
+    font-size: 22px;
+    margin-left: 20px;
+}
+
+.footer-links a {
+    font-size: 22px;
+    letter-spacing: 4%;
+    color: #B2B3CF;
+    text-transform: capitalize;
+    margin: 0px 20px;
+}
+
+footer .footer-links .divided-line {
+    display: inline-block;
+    width: 1px;
+    height: 15px;
+    background-color: var(--primaryColor);
+}
+
+.footer-copyright {
+    margin-top: 35px;
+    font-size: 24px;
+    letter-spacing: 4%;
+    font-family: customBoldFont;
+    color: white;
+    opacity: 70%;
+    margin-bottom: 20px;
+}
+/* start of responsive footer */
+@media screen and (min-width:320px) and (max-width:660px) {
+footer {
+    padding: 60px 0px;
+}
+
+.TOTC-sign {
+    display: inline-block;
+}
+
+footer img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+footer .TOTC-sign span {
+    display: none;
+}
+
+footer .TOTC-sign p {
+    margin: 0px;
+    letter-spacing: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.subscribe-section {
+    margin: 0px;
+    padding: 0px 10px;
+}
+
+.subscribe-section form input {
+    height: 50px;
+    width: 300px;
+}
+
+.subscribe-section button {
+    width: 150px;
+    height: 50px;
+    margin: 20px 0px 20px;
+}
+
+.footer-links a {
+    font-size: 20px;
+    letter-spacing: 0px;
+    margin: 0px 10px;
+    padding: 0px 5px;
+}
+
+.footer-copyright {
+    font-size: 20px;
+}}
